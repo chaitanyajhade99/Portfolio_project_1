@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+}
+
+nav{
+    display: flex;
+    height: 70px;
+    background-color: black;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 5;
+}
+
+.right>ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+.img{
+    width: 100%;
+    opacity: 50%;
+}
+
+.herotext{
+    
+    
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#hero{
+    display: flex;
+    background-image: url(hero.webp);
+    background-size: cover;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.disc{
+    width: 350px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.head{
+    font-size: 50px;
+}
+
+.button{
+    
+    background-color: green;
+    color: white;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 2px;
+    text-decoration: none;
+
+}
+
+.job{
+    font-size: 40px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.active{
+    color: #6c757d;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.job{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.job-card{
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.job-icon{
+    background-color: rgb(36, 204, 36);
+    
+    border-radius: 50%;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+}
+
+.content{
+    margin: 5px;
+    padding: 5px;
+    line-height: 1.5;
+}
+
+.image{
+    width: 23%;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+.div-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.emp>img{
+    margin: 5px;
+    padding: 5px;
+    width: 90%;
+    border-radius: 50%;
+}
+
+.emp{
+    text-align: center;
+    
+}
+
+.container>.left{
+    width: 60%;
+    
+    padding: 60px;
+    margin-left: 40px;
+    background-color: rgb(247, 247, 247);
+    /* justify-content: center; */
+    
+   
+}
+.text{
+    margin-bottom: 15px;
+}
+
+.right>img{
+    width: 80%;
+    position: relative;
+    right: 5%;
+    height: 90%;
+    top: 5%;
+}
+
+.container{
+    justify-content: center;
+    display: flex;    
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.reverse>.right>img{
+    position: relative;
+    left: 10%;
+    width: 100%;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    background-color: rgb(247, 247, 247);
+    margin-bottom: 20px;
+    width: 95%;
+    margin-left: 25px;
+}
+
+.form>.right label{
+    margin-bottom: 10px;
+    flex-direction: column;   
+}
+
+.form>.right input{
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 15px;
+    width: 200%;
+    border: none;
+    border-radius: 5px;
+}
+
+.form>.right{
+    margin-left: 50px;
+}
+
+.submit{
+    width: 200%;
+    background-color: green;
+    color: white;   
+    padding: 10px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+
+.last{
+    display: flex;
+    height: 100px;
+    background-color: rgb(25, 3, 3);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    z-index: 5;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.icons1{
+    margin: 10px;
+}
+
+.txt>p{
+    color: white;
+}
+
+.form>.right input:focus{
+    border-color: green;
+}
+
+input[type=text]:focus{
+    outline-color: green;
+}
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#hero::before{
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    position: absolute;
+}
+
+#hero>*{
+    z-index: 3;
+}
+
+
+@media screen and (max-width:992px) {
+    .hero>*{
+        text-align: center;
+    }
+    .hero em{
+        width: 120%;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
